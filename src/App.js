@@ -21,7 +21,7 @@ export default function BasicTextFields() {
   const [refresh, setRefresh] = useState([]);
   
   const onSubmit = () => {
-    axios.post(`https://sheet.best/api/sheets/13513c0d-24f7-4d21-87f3-7eb20ca397ea`, {
+    axios.post(`https://sheet.best/api/sheets/c6dc9188-3580-4eb9-b111-0e925eac5ac3`, {
       name, group, phase
     })
     .then((data) => {
@@ -30,7 +30,7 @@ export default function BasicTextFields() {
   }
 
   useEffect(()=>{
-    axios.get(`https://sheet.best/api/sheets/13513c0d-24f7-4d21-87f3-7eb20ca397ea`)
+    axios.get(`https://sheet.best/api/sheets/c6dc9188-3580-4eb9-b111-0e925eac5ac3`)
     .then((incomingData)=> {
       setAPIdata(incomingData.data);
     })
